@@ -45,5 +45,35 @@ https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras
   [0,1,0]
 
   [0,0,1]
+------
+
+## Plan
+
+- [x] **d =10** for Position Embedding
+
+- [ ] Compare model performance
+
+  - [x] **score / rank** which one is more informative. (below 80)
+
+    |RNN model|Performance| Score | Duration+ | Ratio++ | Rank (d=10) |
+    | :---------- | :--- | ---- | :--- | :--- | :--- |
+    |ASSIGNMENT 1||  |  |  |  |
+    |  | *Accuracy* | 0.69 | 0.74 | 0.72 | 0.73 |
+    |  | *F1_macro* | 0.60 | 0.66 | 0.67 | 0.70 |
+    | ASSIGNMENT 1, 2, 3 |  | | | | |
+    |  | *Accuracy*  | 0.79 | 0.81      | 0.81    | **0.85**    |
+    |                    | *F1_macro*  | 0.77  | 0.79      | 0.80    | **0.83**    |
+    |  |  | | | | |
+    |  |  | | | | |
+
+  - [ ] LSTM, GRU and Binary LSTM
+
+- [ ] Build assignment embeddings
+
+  - [ ] for assignment 1, 
+  - [ ] embedding layer: 
+
+
+
 
 ​	
