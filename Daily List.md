@@ -55,23 +55,47 @@ https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras
 
   - [x] **score / rank** which one is more informative. (below 80)
 
-    |RNN model|Performance| Score | Duration+ | Ratio++ | Rank (d=10) |
-    | :---------- | :--- | ---- | :--- | :--- | :--- |
-    |ASSIGNMENT 1||  |  |  |  |
-    |  | *Accuracy* | 0.69 | 0.74 | 0.72 | 0.73 |
-    |  | *F1_macro* | 0.60 | 0.66 | 0.67 | 0.70 |
-    | ASSIGNMENT 1, 2, 3 |  | | | | |
-    |  | *Accuracy*  | 0.79 | 0.81      | 0.81    | **0.85**    |
-    |                    | *F1_macro*  | 0.77  | 0.79      | 0.80    | **0.83**    |
-    |  |  | | | | |
-    |  |  | | | | |
+    |RNN model|Performance| Score | Duration+ | Ratio++ | Rank (d=10) | All |
+    | :---------- | :--: | :--: | :--: | :--: | :--: | :--: |
+    |ASSIGNMENT 1||  |  |  |  |  |
+    |  | *Accuracy* | 0.69 | 0.74 | 0.72 | 0.73 |  |
+    |  | *F1_macro* | 0.60 | 0.66 | 0.67 | 0.70 |  |
+    | ASSIGNMENT 1, 2, 3 |  | | | | | |
+    |  | *Accuracy*  | 0.7942 | 0.8004 | 0.8169 | 0.8128 | **0.8375** |
+    |                    | *F1_macro*  | 0.7716 | 0.7748 | 0.7983 | 0.7966 | **0.8221** |
 
-  - [ ] LSTM, GRU and Binary LSTM
+    | LSTM model         | Performance | Score  | Duration+ | Ratio++ | Rank (d=10) |    All     |
+    | :----------------- | :---------: | :----: | :-------: | :-----: | :---------: | :--------: |
+    | ASSIGNMENT 1, 2, 3 |             |        |           |         |             |            |
+    |                    | *Accuracy*  | 0.7963 |  0.7984   | 0.8106  |   0.8169    | **0.8355** |
+    |                    | *F1_macro*  | 0.7754 |  0.7758   | 0.7829  |   0.8010    | **0.8218** |
+
+    | GRU model          | Performance | Score  | Duration+ | Ratio++ | Rank (d=10) |    All     |
+    | :----------------- | :---------: | :----: | :-------: | :-----: | :---------: | :--------: |
+    | ASSIGNMENT 1, 2, 3 |             |        |           |         |             |            |
+    |                    | *Accuracy*  | 0.7757 |  0.8005   | 0.8169  |   0.8210    | **0.8313** |
+    |                    | *F1_macro*  | 0.7548 |  0.7741   | 0.8017  |   0.8053    | **0.8168** |
+
+    | Bi-LSTM model      | Performance | Score  | Duration+ | Ratio++ | Rank (d=10) |    All     |
+    | :----------------- | :---------: | :----: | :-------: | :-----: | :---------: | :--------: |
+    | ASSIGNMENT 1, 2, 3 |             |        |           |         |             |            |
+    |                    | *Accuracy*  | 0.7963 |  0.8149   | 0.8231  |   0.8272    | **0.8519** |
+    |                    | *F1_macro*  | 0.7740 |  0.7966   | 0.8046  |   0.8078    | **0.8417** |
+
+    
+
+  - [x] Add LSTM, GRU and Binary LSTM
+
+  - [ ] Conclusion
+
+    - Rank比Score 更 informative
+    - 
 
 - [ ] Build assignment embeddings
 
-  - [ ] for assignment 1, 
-  - [ ] embedding layer: 
+  **[No improvement]** 
+  
+  All assignment embeddings are the same, while we have different outputs to predict.
 
 
 
