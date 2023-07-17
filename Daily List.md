@@ -51,9 +51,11 @@ https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras
 
 - [x] **d =10** for Position Embedding
 
-- [ ] Compare model performance
+- [x] Compare model performance
 
   - [x] **score / rank** which one is more informative. (below 80)
+
+  - [x] Add LSTM, GRU and Binary LSTM
 
     |RNN model|Performance| Score | Duration+ | Ratio++ | Rank (d=10) | All |
     | :---------- | :--: | :--: | :--: | :--: | :--: | :--: |
@@ -82,22 +84,33 @@ https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras
     |                    | *Accuracy*  | 0.7963 |  0.8149   | 0.8231  |   0.8272    | **0.8519** |
     |                    | *F1_macro*  | 0.7740 |  0.7966   | 0.8046  |   0.8078    | **0.8417** |
 
-    
 
-  - [x] Add LSTM, GRU and Binary LSTM
+  1. *学生的Assignment 分数。*
+  2. *学生提交Assignment的所需要的时间。*
+  3. *Assignment分数和提交时间两者的比率。*
+  4. *通过使用Score变换得到的Rank得到 Position Embedding*
 
-  - [ ] Conclusion
+  > Score: 1
+  >
+  > Duration: 1+2 
+  >
+  > Ration: 1+2+3
+  >
+  > Rank: 4
+  >
+  > All: 1+2+3+4
 
-    - Rank比Score 更 informative
-    - 
+  从结果来看，只是用了一个 `Position Embedding 将比Score转化成RANK` 得到的结果就跟`分数`，`时间`、以及`分数和时间的比例`打平，甚至略好，可以认为 RANK 比单纯的 SCORE 更有意义和参考性。我认为其中的原因可能是由于：
 
-- [ ] Build assignment embeddings
+  > 排名反映了学生的相对水平和竞争力，而成绩可能受到不同作业难度、评分标准等因素的影响。
+  > 排名更好地消除了数据的量纲和尺度差异，使数据更加规范化和标准化，便于 RNN 模型的训练和收敛。
+  > 排名能够捕捉数据的变化趋势和动态特征，而成绩可能存在一些噪声和异常值，影响 RNN 模型的泛化能力。
 
-  **[No improvement]** 
-  
-  All assignment embeddings are the same, while we have different outputs to predict.
+- [ ] 关于使用 assignment embeddings：
+
+  All assignment embeddings are the same, while we have different outputs to predict. 由于我们只使用了三个作业的情况来预测学生的最终成绩是否危险。故对于每个作业，我们的token是一样的。相当于每一位学生，他们concatenate 之后就会有部分数据的列相同，而他们最终的成绩是否危险确是不得而知的。因此，对于模型来说，只要输入的token相同，得到的Assignment Embedding 也是相同的，反而为训练提供了噪音。
 
 
 
 
-​	
+​	关于不同的模型与代码的参数如下，地址为：https://github.com/wyzhw/Student-Risk-Indentify
