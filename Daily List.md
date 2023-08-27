@@ -100,7 +100,7 @@ https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras
   >
   > All: 1+2+3+4
 
-  从结果来看，只是用了一个 `Position Embedding 将比Score转化成RANK` 得到的结果就跟`分数`，`时间`、以及`分数和时间的比例`打平，甚至略好，可以认为 RANK 比单纯的 SCORE 更有意义和参考性。我认为其中的原因可能是由于：
+  从结果来看，只是用了一个 `Position Embedding 将比Score转化成RANK` 得到的结果就跟`分数`，`时间`、以及`分数和时间的比例`打平，甚至略好，可以认为 RANK 比单纯的 SCORE 更有意义和参考性。其中的原因可能是由于：
 
   > 排名反映了学生的相对水平和竞争力，而成绩可能受到不同作业难度、评分标准等因素的影响。
   > 排名更好地消除了数据的量纲和尺度差异，使数据更加规范化和标准化，便于 RNN 模型的训练和收敛。
