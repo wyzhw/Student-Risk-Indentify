@@ -44,7 +44,7 @@ https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras
 
   [0,1,0]
 
-  [0,0,1]
+  [0,0,1]Times
 ------
 
 ## Plan
@@ -57,6 +57,18 @@ https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras
 
   - [x] Add LSTM, GRU and Binary LSTM
 
+    | *F1_macro* | Score  | Rank(d=1) | Rank (d=10) | Rank(d=100) |
+    | :--------- | :----: | :-------: | :---------: | :---------: |
+    | LR model   | 0.766  |           |             |             |
+    | SVM        | 0.7555 |           |   0.7500    |             |
+    | RNN        |  0.6   |           |             |             |
+    | MLP        | 0.7716 |           |   0.7966    |             |
+    | LSTM       | 0.7754 |           |   0.8010    |             |
+    | GRU        | 0.7548 |           |   0.8053    |             |
+    | Bi-LSTM    | 0.7740 |           |   0.8078    |             |
+    
+    
+    
     |RNN model|Performance| Score | Duration+ | Ratio++ | Rank (d=10) | All |
     | :---------- | :--: | :--: | :--: | :--: | :--: | :--: |
     |ASSIGNMENT 1||  |  |  |  |  |
@@ -71,13 +83,13 @@ https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras
     | ASSIGNMENT 1, 2, 3 |             |        |           |         |             |            |
     |                    | *Accuracy*  | 0.7963 |  0.7984   | 0.8106  |   0.8169    | **0.8355** |
     |                    | *F1_macro*  | 0.7754 |  0.7758   | 0.7829  |   0.8010    | **0.8218** |
-
+    
     | GRU model          | Performance | Score  | Duration+ | Ratio++ | Rank (d=10) |    All     |
     | :----------------- | :---------: | :----: | :-------: | :-----: | :---------: | :--------: |
     | ASSIGNMENT 1, 2, 3 |             |        |           |         |             |            |
     |                    | *Accuracy*  | 0.7757 |  0.8005   | 0.8169  |   0.8210    | **0.8313** |
     |                    | *F1_macro*  | 0.7548 |  0.7741   | 0.8017  |   0.8053    | **0.8168** |
-
+    
     | Bi-LSTM model      | Performance | Score  | Duration+ | Ratio++ | Rank (d=10) |    All     |
     | :----------------- | :---------: | :----: | :-------: | :-----: | :---------: | :--------: |
     | ASSIGNMENT 1, 2, 3 |             |        |           |         |             |            |
