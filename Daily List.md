@@ -57,7 +57,17 @@ https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras
 
   - [x] Add LSTM, GRU and Binary LSTM
 
-    | *F1_macro* | Score  | Rank(d=5) | Rank (d=10) | Rank(d=50) | Rank(d=100) | Rank(Max) |
+    | *Below 70* |   Score    | Rank(d=5) | Rank (d=10) | Rank(d=50) | Rank(d=100) | Rank(Best d) |
+    | :--------- | :--------: | :-------: | :---------: | :--------: | :---------: | ------------ |
+    | LR         |   0.6680   |  0.4842   |   0.6518    |   0.5806   |   0.5033    | 0.6518       |
+    | SVM        | **0.6102** |  0.4740   |   0.5797    |   0.6089   |   0.5905    | 0.6089       |
+    | MLP        | **0.6607** |  0.5180   |   0.6253    |   0.5775   |   0.5603    | 0.6253       |
+    | RNN        |   0.6465   |  0.5923   |   0.7726    |   0.7587   |   0.7660    | **0.8731**   |
+    | LSTM       |   0.7048   |  0.6970   |   0.7305    |   0.7742   |   0.7397    | **0.8786**   |
+    | GRU        |   0.7096   |  0.6400   |   0.7439    |   0.7843   |   0.7598    | **0.8721**   |
+    | Bi-LSTM    |   0.7696   |  0.6291   |   0.7420    |   0.7799   |   0.7942    | **0.8705**   |
+    
+    | *Below 80* | Score  | Rank(d=5) | Rank (d=10) | Rank(d=50) | Rank(d=100) | Rank(Max) |
     | :--------- | :----: | :-------: | :---------: | :--------: | :---------: | --------- |
     | LR model   | 0.7587 |  0.5845   |   0.7136    |   0.5979   |   0.5525    | 0.7152    |
     | SVM        | 0.7562 |  0.5933   |   0.7391    |   0.7263   |   0.7112    | 0.7251    |
@@ -67,8 +77,6 @@ https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras
     | GRU        | 0.7548 |  0.6832   |   0.8053    |   0.8182   |   0.8128    | 0.8563    |
     | Bi-LSTM    | 0.7740 |  0.6765   |   0.8078    |   0.8105   |   0.8047    | 0.8811    |
     
-    
-    
     |RNN model|Performance| Score | Duration+ | Ratio++ | Rank (d=10) | All |
     | :---------- | :--: | :--: | :--: | :--: | :--: | :--: |
     |ASSIGNMENT 1||  |  |  |  |  |
@@ -77,7 +85,7 @@ https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras
     | ASSIGNMENT 1, 2, 3 |  | | | | | |
     |  | *Accuracy*  | 0.7942 | 0.8004 | 0.8169 | 0.8128 | **0.8375** |
     |                    | *F1_macro*  | 0.7716 | 0.7748 | 0.7983 | 0.7966 | **0.8221** |
-
+    
     | LSTM model         | Performance | Score  | Duration+ | Ratio++ | Rank (d=10) |    All     |
     | :----------------- | :---------: | :----: | :-------: | :-----: | :---------: | :--------: |
     | ASSIGNMENT 1, 2, 3 |             |        |           |         |             |            |
